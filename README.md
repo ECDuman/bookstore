@@ -44,7 +44,7 @@ open the terminal and run the commands below
 
 Now it's ready to test APIs by postman.
 
-AUTH:
+### AUTH: ###
 
 POST http://localhost:8080/iwalletapi/auth/register  [requestBody should include username and password to create a user]
 
