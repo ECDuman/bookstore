@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  caseproject:
+    container_name: caseproject
+    image: ecduman/caseproject
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db_iwallet
+  db_iwallet:
+    container_name: db_iwallet
+    image: ecduman/postgres:13
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=iwallet_caseproject
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=profen
+    volumes:
+      - /C/postdata:/postdata
+  
