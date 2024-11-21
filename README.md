@@ -1,6 +1,6 @@
 java 17 - maven - Spring boot 3.2.4 - postgres13
 
-download the zip (iwallet-main)
+download the zip
 
 extract
 
